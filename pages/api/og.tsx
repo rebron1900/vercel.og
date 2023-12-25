@@ -7,9 +7,9 @@ export const config = {
 
 export default async function handler(request: NextRequest) {
     try {
-        const fontData = await fetch(
-            new URL('../../public/NotoSerifCJKsc-Regular.ttf', import.meta.url),
-        ).then((res) => res.arrayBuffer());
+        // const fontData = await fetch(
+        //     new URL('../../public/NotoSerifCJKsc-Regular.ttf', import.meta.url),
+        // ).then((res) => res.arrayBuffer());
 
         const { searchParams } = new URL(request.url);
 
@@ -110,17 +110,17 @@ export default async function handler(request: NextRequest) {
                     </div>
                 </div>
             ),
-            {
-                width: 1200,
-                height: 630,
-                fonts: [
-                    {
-                        name: 'Noto Serif',
-                        data: fontData,
-                        style: 'normal',
-                    },
-                ],
-            },
+            // {
+            //     width: 1200,
+            //     height: 630,
+            //     fonts: [
+            //         {
+            //             name: 'Noto Serif',
+            //             data: fontData,
+            //             style: 'normal',
+            //         },
+            //     ],
+            // },
         );
     } catch (e: any) {
         console.log(`${e.message}`);
