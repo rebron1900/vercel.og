@@ -38,7 +38,7 @@ export default async function handler(request: NextRequest) {
         if(!desc){
             desc = 'All work and no play makes Jack a dull boy'
         }else{
-            desc = tags.slice(0, 100) + '...';
+            desc = desc.slice(0, 100) + '...';
         }
 
         return new ImageResponse(
