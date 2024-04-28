@@ -58,7 +58,7 @@ export default async function handler(request: NextRequest) {
                     }}>
                       <span style={{
                         backgroundColor: 'red',
-                        padding: '0px 15px',
+                        padding: '5px 15px',
                         color: 'white',
                         borderRadius: '5px',
                         fontStyle: 'italic',
@@ -69,9 +69,10 @@ export default async function handler(request: NextRequest) {
                     </div>
                     <div style={{
                       display: 'flex',
-                      padding: '20px 0px 25px 0px',
-                      minHeight: '209px',
-                      flexDirection: 'column'
+                      padding: '40px 0px 25px 0px',
+                      minHeight: '210px',
+                      flexDirection: 'column',
+                      alignItems: 'center',
                     }}>
                       <p style={{
                         fontSize: '41px',
@@ -87,7 +88,7 @@ export default async function handler(request: NextRequest) {
                       <p style={{
                         fontSize: '28px',
                         fontWeight: 'bolder',
-                        marginTop: '10px',
+                        marginTop: '60px',
                         fontStyle: 'italic',
                         textAlign: 'center',
                         lineHeight: '1.2',
@@ -126,6 +127,7 @@ export default async function handler(request: NextRequest) {
                           }}>
                             @1900
                           </span>
+                          
                         </div>
                       </div>
                       <div style={{
