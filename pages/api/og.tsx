@@ -96,8 +96,7 @@ export default async function handler(request: NextRequest) {
                           fontWeight: '900',
                           marginLeft: '13px',
                         }}>
-                          <span style={{ fontSize: '20px' }}>@1900</span>
-                          <span style={{ fontSize: '15px' }}>https://1900.live</span>
+                          <span style={{ fontSize: '20px' }}>@1900 <br /></span>
                         </div>
                       </div>
                       <div style={{ display: 'flex', alignItems: 'center' }}>
