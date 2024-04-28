@@ -69,7 +69,7 @@ export default async function handler(request: NextRequest) {
                     </div>
                     <div style={{
                       display: 'flex',
-                      padding: '10px 0px 25px 0px',
+                      padding: '20px 0px 25px 0px',
                       minHeight: '209px',
                       flexDirection: 'column'
                     }}>
