@@ -24,35 +24,98 @@ export default async function handler(request: NextRequest) {
         }
 
         return new ImageResponse(
-            (      
-            <div
-                tw="flex flex-col w-full h-full p-[50px] justify-between bg-zinc-50"
-                style={{
-                  backgroundImage: `url(")`,
-                }}
-              >
-                <div tw="flex items-center">
-                  <div tw="flex w-[50px] h-[50px] rounded-full shadow overflow-hidden mr-[20px]">
-                    {/* @ts-expect-error src 的类型正确 */}
-                    <img tw="w-full h-full" src="https://cdn.1900.live/20190640/ico.png" />
-                  </div>
-                  <span tw="text-[20px] text-zinc-700">只是玩玩 | All work and no play makes Jack a dull boy</span>
+            (
+                <div
+                    style={{
+                        height: '100%',
+                        width: '100%',
+                        display: 'flex',
+                        textAlign: 'center',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        flexDirection: 'row',
+                        flexWrap: 'nowrap',
+                        backgroundColor: 'white',
+                        backgroundImage: 'radial-gradient(circle at 25px 25px, lightgray 2%, transparent 0%), radial-gradient(circle at 75px 75px, lightgray 2%, transparent 0%)',
+                        backgroundSize: '100px 100px',
+                    }}
+                >
+                    <div
+                        style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                        }}
+                    >
+                        <img
+                            alt="1900"
+                            height={256}
+                            src="https://cdn.1900.live/20190640/ico.png"
+                            style={{ margin: '0 60px 0 100px' }}
+                            width={256}
+                        />
+                    </div>
+                    <div
+                        style={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            flexDirection: 'column',
+                            marginRight: '100px',
+                            alignItems: 'flex-start',
+                            width: '680px',
+                            minWidth: '680px'
+                        }}
+                    >
+                        <div
+                            style={{
+                                display: 'flex',
+                                fontSize: 48,
+                                fontStyle: 'normal',
+                                color: 'black',
+                                marginTop: 0,
+                                lineHeight: 1.8,
+                                whiteSpace: 'pre-wrap',
+                                marginRight: 'auto',
+                            }}
+                        >
+                            <b>只是玩玩&apos;Blog</b>
+                        </div>
+                        <div
+                            style={{
+                                display: 'flex',
+                                fontSize: 40,
+                                fontStyle: 'normal',
+                                color: 'black',
+                                marginTop: 15,
+                                lineHeight: 1.8,
+                                whiteSpace: 'pre-wrap',
+                            }}
+                        >
+                            <b>《{title}》</b>
+                        </div>
+                        <div
+                            style={{
+                                display: 'flex',
+                                fontSize: 32,
+                                fontStyle: 'normal',
+                                color: 'dimgray',
+                                marginTop: 15,
+                                lineHeight: 1.8,
+                                whiteSpace: 'pre-wrap',
+                                marginLeft: 'auto',
+                            }}
+                        >
+                            <small>- 1900 (@1900)</small>
+                        </div>
+                    </div>
                 </div>
-                <div tw="flex flex-col text-left">
-                  <h1 tw="text-left text-[45px] font-bold m-0 leading-none">keyguard：一个好用的 Bitwarden 第三方安卓客户端</h1>
-                  <p tw="text-left text-[30px] text-zinc-500 m-0 mt-[20px]">Bitwarden 是一个优秀的开源全平台密码管理软件。 </p>
-                </div>
-                <div tw="flex justify-end">
-                  <span tw="text-[26px] text-violet-500">HaydenHayden.com</span>
-                </div>
-              </div>
             ),
             {
                 width: 1200,
                 height: 630,
                 fonts: [
                     {
-                        name: 'Noto Serif',
+                        name: 'Maple UI',
                         data: fontData,
                         style: 'normal',
                     },
