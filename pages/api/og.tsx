@@ -21,6 +21,7 @@ export default async function handler(request: NextRequest) {
         let title = originalTitle;
         let tags = originalTags;
         let desc = originalDesc;
+        let date = originalDate;
 
         if (!title) {
             title = 'A Hugo blog about Charles Chin.';
@@ -39,6 +40,10 @@ export default async function handler(request: NextRequest) {
             desc = 'All work and no play makes Jack a dull boy'
         }else{
             desc = desc.slice(0, 90) + '...';
+        }
+
+        if(!date){
+          date = '1900/01/01';
         }
 
         return new ImageResponse(
@@ -140,7 +145,7 @@ export default async function handler(request: NextRequest) {
                           fontWeight: 'bold',
                           fontStyle: 'italic'
                         }}>
-                          2024/04/19
+                          {date}
                         </span>
                       </div>
                     </div>
