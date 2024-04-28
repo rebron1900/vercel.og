@@ -59,7 +59,7 @@ export default async function handler(request: NextRequest) {
                     <div style={{
                       display: 'flex',
                       justifyContent: 'center',
-                      padding: '10px 0px 25px 0px',
+                      padding: '20px 0px 25px 0px',
                       minHeight: '209px',
                     }}>
                       <p style={{
@@ -97,7 +97,7 @@ export default async function handler(request: NextRequest) {
                           marginLeft: '13px',
                         }}>
                           <span style={{ fontSize: '20px' }}>@1900</span>
-                          <span>https://1900.live</span>
+                          <span style={{ fontSize: '15px' }}>https://1900.live</span>
                         </div>
                       </div>
                       <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -109,7 +109,6 @@ export default async function handler(request: NextRequest) {
                         }}>{originalDate}</span>
                       </div>
                     </div>
-                    <div style={{}} />
                   </div>
             ),
             {
