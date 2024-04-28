@@ -23,13 +23,13 @@ export default async function handler(request: NextRequest) {
         if (!title) {
             title = 'A Hugo blog about Charles Chin.';
         } else {
-            title = title.slice(0, 100);
+            title = title.slice(0, 20);
         }
 
         if (!tags){
             tags = '分享';
         }else{
-            tags = tags.slice(0, 20);
+            tags = tags.slice(0, 10);
         }
 
         return new ImageResponse(
