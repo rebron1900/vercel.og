@@ -38,7 +38,7 @@ export default async function handler(request: NextRequest) {
         if(!desc){
             desc = 'All work and no play makes Jack a dull boy'
         }else{
-            desc = desc.slice(0, 100) + '...';
+            desc = desc.slice(0, 90) + '...';
         }
 
         return new ImageResponse(
@@ -75,7 +75,7 @@ export default async function handler(request: NextRequest) {
                       alignItems: 'center',
                     }}>
                       <p style={{
-                        fontSize: '41px',
+                        fontSize: '50px',
                         fontWeight: 'bolder',
                         margin: '0',
                         fontStyle: 'italic',
@@ -88,14 +88,14 @@ export default async function handler(request: NextRequest) {
                       <p style={{
                         fontSize: '28px',
                         fontWeight: 'bolder',
-                        marginTop: '60px',
+                        marginTop: '40px',
                         fontStyle: 'italic',
                         textAlign: 'center',
-                        lineHeight: '1.2',
                         padding: '0 35px',
-                        color: '#8b949e'
+                        color: '#8b949e',
+                        textIndent: '2em'
                       }}>
-                        {desc}
+                       「   {desc}    」
                       </p>
                     </div>
                     <div style={{
