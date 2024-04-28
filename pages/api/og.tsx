@@ -8,7 +8,7 @@ export const config = {
 export default async function handler(request: NextRequest) {
     try {
         const fontData = await fetch(
-            new URL('https://1900.live/assets/fonts/maple-ui.ttf', import.meta.url),
+            new URL('https://1900.live/assets/fonts/SmileySans.ttf', import.meta.url),
         ).then((res) => res.arrayBuffer());
 
         const { searchParams } = new URL(request.url);
@@ -150,7 +150,7 @@ export default async function handler(request: NextRequest) {
                 height: 400,
                 fonts: [
                     {
-                        name: 'Maple UI',
+                        name: 'SmileySans',
                         data: fontData,
                         style: 'italic',
                     },
