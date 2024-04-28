@@ -47,6 +47,8 @@ export default async function handler(request: NextRequest) {
                     display: 'flex',
                     flexDirection: 'column',
                     height: '400px',
+                    width: '800px',
+                    backgroundColor: 'white',
                     border: 'solid 1px',
                     justifyContent: 'flex-end'
                   }}>
