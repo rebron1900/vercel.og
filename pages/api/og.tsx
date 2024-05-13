@@ -106,11 +106,11 @@ export default async function handler(request: NextRequest) {
                     <div style={{
                       display: 'flex',
                       justifyContent: 'space-between',
-                      marginBottom: '16px'
+                      marginBottom: '25px'
                     }}>
                       <div style={{
                         display: 'flex',
-                        marginLeft: '20px'
+                        marginLeft: '50px'
                       }}>
                         <img src="https://cdn.1900.live/20190640/ico.png" style={{
                           width: '50px',
@@ -141,7 +141,7 @@ export default async function handler(request: NextRequest) {
                       }}>
                         <span style={{
                           fontSize: '20px',
-                          marginRight: '20px',
+                          marginRight: '50px',
                           fontWeight: 'bold',
                           fontStyle: 'italic'
                         }}>
